@@ -1,6 +1,6 @@
 // Bibliotecas
 const { Router } = require('express'); // Facilitar rotas e requisições
-const DevControlleer = require('./controllers/DevController');
+const DevController = require('./controllers/DevController');
 
 const routes = Router();
 
@@ -10,6 +10,7 @@ const routes = Router();
 // Body: request.body (Dados para criação ou alteração de um registro)
 
 // Requisição
-routes.post('/devs', DevControlleer.store);
+routes.get('/devs', DevController.index);
+routes.post('/devs', DevController.store);
 
 module.exports = routes;

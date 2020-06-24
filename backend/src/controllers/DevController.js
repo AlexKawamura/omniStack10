@@ -1,8 +1,17 @@
 const axios = require('axios'); // Fazer chamada para outras APIs (github)
-const Dev = require('../models/Dev')
+const Dev = require('../models/Dev');
+const { index } = require('../models/utils/PointSchema');
 
 // Tratamento dos dados recebidos
 module.exports = {
+    // 'index': Listar todas as informações
+    async index(request, response) {
+        const devs = await Dev.find();
+
+        return response.json(devs);
+    },
+
+    // 'store': Cadastra as informações
     async store(request, response) {
         // Variável para receber o json vindo pela requisição
         const { github_username, techs, latitude, longitude } = request.body;
