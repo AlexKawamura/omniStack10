@@ -1,7 +1,7 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const routes = require('./routes');
-
+// Biblioteca
+const express = require('express'); // Facilitar rotas e requisiçoes
+const mongoose = require('mongoose'); // Banco de Dados
+const routes = require('./routes'); // Pasta com rotas
 
 const app = express();
 
