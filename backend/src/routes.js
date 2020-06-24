@@ -1,7 +1,6 @@
 // Bibliotecas
 const { Router } = require('express'); // Facilitar rotas e requisições
-const axios = require('axios'); // Fazer chamada para outras APIs (github)
-const Dev = require('./models/Dev');
+const DevControlleer = require('./controllers/DevController');
 
 const routes = Router();
 
@@ -11,6 +10,6 @@ const routes = Router();
 // Body: request.body (Dados para criação ou alteração de um registro)
 
 // Requisição
-routes.post('/devs', );
+routes.post('/devs', DevControlleer.store);
 
 module.exports = routes;

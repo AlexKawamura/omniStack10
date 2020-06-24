@@ -1,3 +1,7 @@
+const axios = require('axios'); // Fazer chamada para outras APIs (github)
+const Dev = require('../models/Dev')
+
+// Tratamento dos dados recebidos
 module.exports = {
     async store(request, response) {
         // Variável para receber o json vindo pela requisição
