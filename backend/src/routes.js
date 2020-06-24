@@ -1,6 +1,7 @@
 // Bibliotecas
 const { Router } = require('express'); // Facilitar rotas e requisições
 const DevController = require('./controllers/DevController');
+const SearchController = require('./controllers/SearchController');
 
 const routes = Router();
 
@@ -12,5 +13,7 @@ const routes = Router();
 // Requisição
 routes.get('/devs', DevController.index);
 routes.post('/devs', DevController.store);
+
+routes.get('/search', SearchController.index);
 
 module.exports = routes;
