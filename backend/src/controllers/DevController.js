@@ -1,6 +1,6 @@
 const axios = require('axios'); // Fazer chamada para outras APIs (github)
 const Dev = require('../models/Dev');
-const { index } = require('../models/utils/PointSchema');
+const parseStringAsArray = require('../utils/ParseStringAsArray');
 
 // Tratamento dos dados recebidos
 module.exports = {
@@ -28,7 +28,7 @@ module.exports = {
             const { name = login, avatar_url, bio } = apiResponse.data;
 
             // Percorre string e separa por ',' e remove espaçamento (.trim)
-            const techsArray = techs.split(',').map(tech => tech.trim());
+            const techsArray = parseStringAsArray(techs);
 
             // Variável para receber a localização
             const location = {
