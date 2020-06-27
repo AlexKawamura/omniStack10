@@ -4,14 +4,14 @@ const parseStringAsArray = require('../utils/ParseStringAsArray');
 
 // Tratamento dos dados recebidos
 module.exports = {
-    // 'index': Listar todas as informações
+    // 'index': Listar todos os Devs
     async index(request, response) {
         const devs = await Dev.find();
 
         return response.json(devs);
     },
 
-    // 'store': Cadastra as informações
+    // 'store': Cadastra um Dev
     async store(request, response) {
         // Variável para receber o json vindo pela requisição
         const { github_username, techs, latitude, longitude } = request.body;
@@ -50,6 +50,7 @@ module.exports = {
         return response.json(dev);
     },
 
+    // 'update': Atualiza um Dev
     async update(request, response) {
         const { github_username, techs, name, bio, avatar_url, latitude, longitude } = request.body;
 
@@ -75,6 +76,7 @@ module.exports = {
         return response.json(dev);
     },
 
+    // 'delete': Deleta um Dev
     async delete(request, response) {
         const { github_username } = request.body;
 

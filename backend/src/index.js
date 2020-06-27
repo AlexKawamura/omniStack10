@@ -1,6 +1,7 @@
 // Biblioteca
 const express = require('express'); // Facilitar rotas e requisiçoes
 const mongoose = require('mongoose'); // Banco de Dados
+const cors = require('cors');
 const routes = require('./routes'); // Pasta com rotas
 
 const app = express();
@@ -10,6 +11,7 @@ mongoose.connect('mongodb+srv://alex:1war9p9ten7@cluster0-t28up.mongodb.net/omni
     useUnifiedTopology: true,
 });
 
+app.use(cors());
 // Especifica para o express a utilização de json, deve ser específicado antes das rotas 
 app.use(express.json());
 // Usar rotas do arquivo route.js
