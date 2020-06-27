@@ -2,6 +2,8 @@ import React from 'react';
 
 import './global.css';
 import './App.css';
+import './Sidebar.css';
+import './Main.css';
 
 function App() {
   return (
@@ -35,7 +37,63 @@ function App() {
         </form>
       </aside>
       <main>
-
+        <ul>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/22474655?s=460&v=4" alt="Alexandre Tanaka"/>
+              <div className="user-info">
+                <strong>Alexandre Tanaka</strong>
+                <span>ReactJs, ReactNative, Node.js</span>
+              </div>
+            </header>
+            <p>Student, 22 years-old UTFPR - Software Engineering 1 year at UENP - Ciência da Computação</p>
+            <a href="https://github.com/AlexKawamura">Acessar perfil do Github</a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/22474655?s=460&v=4" alt="Alexandre Tanaka"/>
+              <div className="user-info">
+                <strong>Alexandre Tanaka</strong>
+                <span>ReactJs, ReactNative, Node.js</span>
+              </div>
+            </header>
+            <p>Student, 22 years-old UTFPR - Software Engineering 1 year at UENP - Ciência da Computação</p>
+            <a href="https://github.com/AlexKawamura">Acessar perfil do Github</a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/22474655?s=460&v=4" alt="Alexandre Tanaka"/>
+              <div className="user-info">
+                <strong>Alexandre Tanaka</strong>
+                <span>ReactJs, ReactNative, Node.js</span>
+              </div>
+            </header>
+            <p>Student, 22 years-old UTFPR - Software Engineering 1 year at UENP - Ciência da Computação</p>
+            <a href="https://github.com/AlexKawamura">Acessar perfil do Github</a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/22474655?s=460&v=4" alt="Alexandre Tanaka"/>
+              <div className="user-info">
+                <strong>Alexandre Tanaka</strong>
+                <span>ReactJs, ReactNative, Node.js</span>
+              </div>
+            </header>
+            <p>Student, 22 years-old UTFPR - Software Engineering 1 year at UENP - Ciência da Computação</p>
+            <a href="https://github.com/AlexKawamura">Acessar perfil do Github</a>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/22474655?s=460&v=4" alt="Alexandre Tanaka"/>
+              <div className="user-info">
+                <strong>Alexandre Tanaka</strong>
+                <span>ReactJs, ReactNative, Node.js</span>
+              </div>
+            </header>
+            <p>Student, 22 years-old UTFPR - Software Engineering 1 year at UENP - Ciência da Computação</p>
+            <a href="https://github.com/AlexKawamura">Acessar perfil do Github</a>
+          </li>
+        </ul>
       </main>
     </div>
   );
