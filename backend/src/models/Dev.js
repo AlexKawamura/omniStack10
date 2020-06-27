@@ -11,7 +11,7 @@ const DevSchema = new mongoose.Schema({
     techs: [String],
     location: {
         type: PointSchema,
-        Index: '2dsphere' // index em minúsculo causa um warning
+        index: '2dsphere' // index em minúsculo causa um warning
     }
 });
 
