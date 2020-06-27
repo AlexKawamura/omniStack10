@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import './style.css';
+
 function DevForm({ onSubmit }) {
     const [github_username, setGithubUsername] = useState('');
     const [techs, setTechs] = useState('');
@@ -24,7 +26,7 @@ function DevForm({ onSubmit }) {
     }, []);
 
     async function handleSubmit(e) {
-        e.prenventDefault();
+        e.preventDefault();
 
         await onSubmit({
             github_username,
