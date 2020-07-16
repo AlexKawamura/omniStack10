@@ -4,8 +4,14 @@ const socket = socketio('http://192.168.0.102:2222', {
     autoConnect: false,
 });
 
-function connect() {
-    socket.connect();
+function connect(latitude, longitude, techs) {
+    socket.io.opts.query = {
+        latitude,
+        longitude,
+        techs,
+    };
+
+    socket.connect(); 
 }
 
 function disconnect() {
