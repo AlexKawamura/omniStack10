@@ -14,6 +14,7 @@ function Routes() {
             <Stack.Navigator
                 screenOptions={{
                     headerTintColor: '#FFF',
+                    headerBackTitleVisible: false,
                     headerStyle: {
                         backgroundColor: '#7D40E7',
                     },
