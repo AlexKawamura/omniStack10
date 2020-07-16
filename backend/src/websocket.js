@@ -4,6 +4,6 @@ exports.setupWebSocket = (server) => {
     const io = socketio(server);
 
     io.on('connection', socket => {
-        console.log(socket.io);
+        console.log(socket.id);
     });
 };
