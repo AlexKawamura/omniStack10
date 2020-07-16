@@ -36,6 +36,8 @@ function Main({ navigation }) {
     }, []);
 
     function setupWebScoket() {
+        disconnect();
+
         const { latitude, longitude } = currentRegion;
 
         connect(
