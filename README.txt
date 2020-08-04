@@ -1,5 +1,5 @@
-Ferramentas utilizadas: yarn, node.js, mongoDB
+Projeto da Semana OmniStack 10.0
 
-Início:
-- No terminal entre na pasta backend e execute o comando yarn dev
-- Na pasta mobile executar yarn start ou expo start
+Ferramenta para procura programadores especializados em determinadas tecnologias dentro de uma região.
+
+Com interface web e mobile.
